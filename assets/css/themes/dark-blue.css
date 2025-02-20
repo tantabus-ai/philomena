@@ -76,4 +76,5 @@ $image-overlay-background-color: #000000;
 
 :root {
   --keep: #111111;
+  --logo-color: #5b7eff;
 }
