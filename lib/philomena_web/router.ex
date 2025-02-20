@@ -449,7 +449,8 @@ defmodule PhilomenaWeb.Router do
       end
     end
 
-    resources "/channels", ChannelController, only: [:new, :create, :edit, :update, :delete, :index, :show] do
+    resources "/channels", ChannelController,
+      only: [:new, :create, :edit, :update, :delete, :index, :show] do
       resources "/read", Channel.ReadController, only: [:create], singleton: true
       resources "/nsfw", Channel.NsfwController, only: [:create, :delete], singleton: true
 
@@ -498,6 +499,8 @@ defmodule PhilomenaWeb.Router do
     scope "/fetch", Fetch, as: :fetch do
       resources "/tags", TagController, only: [:index]
     end
+
+    resources "/themes", ThemeController, only: [:index]
 
     resources "/tags", TagController, only: [:index, :show] do
       resources "/tag_changes", Tag.TagChangeController, only: [:index]
