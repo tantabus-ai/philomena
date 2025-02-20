@@ -1,3 +1,14 @@
+:root {
+  --logo-color: #9a91d9;
+}
+
 i.favicon-home {
+  background-image: unset !important;
+  background-color: var(--logo-color);
+  -webkit-mask-image: url("/favicon.svg");
+  mask-image: url("/favicon.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center; 
   vertical-align: middle;
 }
