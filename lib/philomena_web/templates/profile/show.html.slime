@@ -151,7 +151,7 @@
 
   .column-layout__main
     = render PhilomenaWeb.ProfileView, "_statistics.html", user: @user, statistics: @statistics, conn: @conn
-    = render PhilomenaWeb.ProfileView, "_recent_images.html", title: "Recent Artwork", images: @recent_artwork, view_all_path: ~p"/search?#{[q: tag_disjunction(@tags)]}", conn: @conn
+    = render PhilomenaWeb.ProfileView, "_recent_images.html", title: "Recent Creations", images: @recent_artwork, view_all_path: ~p"/search?#{[q: tag_disjunction(@tags)]}", conn: @conn
     = render PhilomenaWeb.ProfileView, "_recent_images.html", title: "Recent Uploads", images: @recent_uploads, view_all_path: ~p"/search?#{[q: "uploader_id:#{@user.id}"]}", conn: @conn
     = render PhilomenaWeb.ProfileView, "_recent_images.html", title: "Recent Favorites", images: @recent_faves, view_all_path: ~p"/search?#{[q: "faved_by_id:#{@user.id}"]}", conn: @conn
     = render PhilomenaWeb.ProfileView, "_recent_galleries.html", galleries: @recent_galleries, user: @user, conn: @conn
