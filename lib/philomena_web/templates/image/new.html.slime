@@ -1,19 +1,16 @@
 = form_for @changeset, ~p"/images", [multipart: true], fn f ->
-  .dnp-warning
+  .before-upload-warning
     h4
-      ' Read the
-      a> href="/pages/rules" site rules
-      ' and check our
-      a> href="/dnp" do-not-post list
-    p
-      ' Don't post content the artist doesn't want here (or shared in general),
-      strong including commercial content.
-
-  p
-    strong
-      ' Please check it isn't already here with
-      a href="/search/reverse" reverse search.
-
+      strong
+        ' Before you upload:
+        p
+          ' Read the
+          a href="/pages/rules" Site Rules
+          ' , 
+          a href="/pages/tags" Tagging Guidelines
+          '  and our base
+          a href="/pages/aibasequality" Quality Checks
+          ' !
   / todo: extract this
   h4 Select an image
   .image-other
