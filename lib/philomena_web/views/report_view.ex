@@ -24,7 +24,7 @@ defmodule PhilomenaWeb.ReportView do
       "Rule #8: Privacy violation": "Rule #8",
       "Rule #9: Obvious generation errors / broken anatomy": "Rule #9",
       "Rule #n: Spirit of the rules": "Rule #n",
-      "Other (please explain)": "Other",
+      "Other (please explain)": "Other"
     ]
   end
 
