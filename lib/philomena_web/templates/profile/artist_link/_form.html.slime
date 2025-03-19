@@ -2,7 +2,6 @@
   = if @changeset.action do
     .alert.alert-danger
       p Oops, something went wrong! Please check the errors below.
-
   .field
     .field
       p
@@ -10,7 +9,7 @@
           ' User Link validation is intended for content creators.
           ' Validating your link will give you control over your content on the site, allowing you to request takedowns.
           ' Do not request a link if the source contains no content which you have created.
-      = text_input f, :tag_name, value: assigns[:tag_name], class: "input", autocomplete: "off", placeholder: "creator:your-name", data: [autocomplete: "true", autocomplete_min_length: "3", autocomplete_source: "/autocomplete/tags?term="]
+      = text_input f, :tag_name, value: assigns[:tag_name], class: "input", autocomplete: "off", placeholder: "creator:your-name", data: [autocomplete: "single-tag"]
       = error_tag f, :tag
 
   .field
