@@ -33,3 +33,6 @@
 
   a.header__link href="/galleries"
     | Galleries
+
+  a.header__link href="/pages/lorachar"
+    | LoRAs
