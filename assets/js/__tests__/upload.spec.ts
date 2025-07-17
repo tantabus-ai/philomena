@@ -173,7 +173,7 @@ describe('Image upload form', () => {
 
     await new Promise<void>(resolve => {
       tagsEl.addEventListener('addtag', (event: Event) => {
-        expect((event as CustomEvent).detail).toEqual({ name: 'artist:test' });
+        expect((event as CustomEvent).detail).toEqual({ name: 'prompter:test' });
         resolve();
       });
 
