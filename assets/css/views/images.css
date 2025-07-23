@@ -111,7 +111,7 @@ span.spoiler div.image-container {
   color: var(--image-show-link-color);
 }
 
-.before-upload-warning a {
+.dnp-warning a {
   color: var(--vote-down-color);
   font-weight: bold;
 }
@@ -127,8 +127,8 @@ div.image-container video {
   justify-content: center;
 }
 
-.before-upload-warning a:hover {
-  color: var(--before-upload-warning-hover-color);
+.dnp-warning a:hover {
+  color: var(--dnp-warning-hover-color);
 }
 
 .image-show-container:hover a:hover {
@@ -223,13 +223,13 @@ div.image-container video {
   margin-left: 1em;
 }
 
-.before-upload-warning {
+.dnp-warning {
   padding: 0.5em;
   border: 3px solid var(--vote-down-color);
   background: var(--admin-links-color);
 }
 
-.before-upload-warning h4 {
+.dnp-warning h4 {
   margin-top: 0.3em;
   margin-bottom: 0.2em;
 }
