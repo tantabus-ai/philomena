@@ -20,7 +20,12 @@ html lang="en"
     link rel="icon" href="/favicon.svg" type="image/svg+xml"
     link rel="search" type="application/opensearchdescription+xml" title="Tantabus" href="/opensearch.xml"
     = csrf_meta_tag()
-    script type="text/javascript" src=~p"/js/app.js" async="async"
+
+    = vite_hmr? do
+      script type="module" src="http://#{@conn.host}:5173/@vite/client"
+      script type="module" src="http://#{@conn.host}:5173/js/app.ts"
+    - else
+      script type="text/javascript" src=~p"/js/app.js" async="async"
     = render PhilomenaWeb.LayoutView, "_opengraph.html", assigns
   body data-theme=theme_name(@current_user) data-vite-reload=to_string(vite_reload?())
     = render PhilomenaWeb.LayoutView, "_burger.html", assigns
