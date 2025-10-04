@@ -7,9 +7,9 @@
       p
         label for="tag_name"
           ' User Link validation is intended for content creators.
-          ' Validating your link will give you control over your content on the site, allowing you to request takedowns.
+          ' Validating your link will allow your fans to find you on other platforms as well!
           ' Do not request a link if the source contains no content which you have created.
-      = text_input f, :tag_name, value: assigns[:tag_name], class: "input", autocomplete: "off", placeholder: "creator:your-name", data: [autocomplete: "single-tag"]
+      = text_input f, :tag_name, value: assigns[:tag_name], class: "input", autocomplete: "off", placeholder: "creator:your-name", data: [autocomplete: "single-tag"], spellcheck: "false"
       = error_tag f, :tag
 
   .field
