@@ -36,3 +36,6 @@
 
   a.header__link href="/pages/lorachar"
     | LoRAs
+
+  a.header__link href="/pages/genguide-index"
+    | Image Gen Basics
